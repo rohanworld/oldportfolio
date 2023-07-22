@@ -1,0 +1,255 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--websiteColor);
+    font-size: 36px;
+    margin-top: 10px;
+  }
+
+  h3 {
+    padding-top: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+  }
+
+  html {
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .img {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .img img {
+    display: block;
+    width: 400px;
+    height: 246px;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+  }
+
+  .img:hover .overlay {
+    height: 100%;
+  }
+  .img:hover{
+    border-radius: 8px;
+  }
+
+  .overlay a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  .overlay a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+
+
+  :root {
+      --websiteColor: #1aa7ec;
+  }
+  
+  #newTab {
+      width: 33px;
+      height: 33px;
+      border: 1px solid red;
+      size: 1.8rem;
+  }
+  
+  * {
+        font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      transition: all .2s linear;
+  }
+  
+  *::selection {
+      background: var(--websiteColor);
+      color: #333;
+  }
+  
+  html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+  }
+  
+  html::-webkit-scrollbar {
+      width: 1.4rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+      background: black;
+  }
+  
+  
+  html::-webkit-scrollbar-thumb{
+      background:var(--websiteColor);
+  }
+
+  body {
+      background: #111;
+      overflow-x: hidden;
+      padding-left: 35rem;
+  }
+  
+  section {
+      min-height: 100vh;
+      padding: 1rem;
+  }
+  
+  .btn {
+      padding: .7rem 3rem;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-size: 2rem;
+      border-radius: 5rem;
+  }
+  
+  .btn i {
+      padding: 0 .5rem;
+      font-size: 1.8rem;
+  }
+  
+  .btn:hover {
+      background: var(--websiteColor);
+      color: black;
+  }
+  
+  .heading {
+      text-align: center;
+      margin: 0 6rem;
+      font-size: 4rem;
+      padding: 1rem;
+      border-bottom: .1rem solid #fff4;
+      color: #fff;
+  }
+  
+  .heading span {
+      color: var(--websiteColor);
+  }
+  
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      height: 100%;
+      width: 35rem;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      text-align: center;
+  }
+  
+  header .name {
+
+      font-size: 3.5rem;
+      color: var(--websiteColor);
+  }
+  .name:hover{
+    cursor: pointer;
+  }
+  
+  header .navbar {
+      
+      width: 100%;
+  }
+  
+  header .navbar ul {
+      list-style: none;
+      padding: 1rem 3rem;
+  }
+  
+  
+  header .navbar ul li a {
+      display: block;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      background: #333;
+      color: #fff;
+      font-size: 2rem;
+      /* border-radius: 5rem; */
+      border-radius: 23px;
+  }
+  
+  header .navbar ul li a:hover {
+      background: var(--websiteColor);
+      color: black;
+      font-weight: bold;
+  }
+  
+  #menu {
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+      font-size: 2.5rem;
+      padding: 1rem 1.5rem;
+      z-index: 1000;
+      display: none;
+  }
+  
+
+
+
+  /* Your existing CSS code before media queries */
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+      padding-left: 0; /* Remove the padding on the left side for mobile devices */
+    }
+  
+    header {
+      display: none; /* Hide the header on mobile devices */
+    }
+  
+    .projects {
+      margin-left: 0; /* Remove the left margin for projects on mobile devices */
+      padding-top: 0; /* Remove the top padding for projects on mobile devices */
+    }
+  }
+  
+
+
+
+
+  
+
